@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima BSB - Previsão do Tempo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Previsão do Tempo</h1>
+            <p class="location">Brasília, DF</p>
+        </header>
+
+        <main class="weather-card">
+            <div id="loading" class="status-message">Carregando dados do clima...</div>
+            <div id="error" class="status-message error-message" style="display: none;">Não foi possível carregar a previsão.</div>
+
+            <div id="weather-content" style="display: none;">
+                <div class="temp-container">
+                    <span id="temperature" class="temp-value">--</span><span class="unit">°C</span>
+                </div>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <span class="detail-label">Umidade Relativa</span>
+                        <span id="humidity" class="detail-value">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Condição</span>
+                        <span id="condition" class="detail-value">--</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
